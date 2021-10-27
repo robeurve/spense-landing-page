@@ -5,6 +5,170 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spense Landing Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"
+      integrity="sha512-vZWT27aGmde93huNyIV/K7YsydxaafHLynlJa/4aPy28/R1a/IxewUH4MWo7As5I33hpQ7JS24kwqy/ciIFgvg=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="top-notice container">
+      <p>
+        🎉 To celebrate Spense's launch, we will be waiving all feels for the
+        entire month of April.
+        <span>You will be receiving 100% of the earnings.</span> 🎉
+      </p>
+    </div>
+
+    <nav class="navbar">
+      <div class="container">
+        <a href="#" class="logo">spense.</a>
+
+        <img
+          id="burger-btn"
+          class="only-mobile"
+          src="./img/hamburger-menu.svg"
+          alt=""
+        />
+
+        <div id="nav-collapse" class="navbar-collapse collapse">
+          <ul class="navbar-links">
+            <li><a class="link" href="#">Business</a></li>
+            <li><a class="link" href="#">Pricing</a></li>
+            <li><a class="link" href="#">Features</a></li>
+            <li><a class="link" href="#">Login</a></li>
+            <li><a class="btn" href="#">Get Started</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="header container">
+      <img src="./img/hero-image-mobile.png" alt="Hero image" />
+
+      <h1>Share your unfiltered thoughts. Get paid.</h1>
+
+      <p>
+        Spense is an open platform for individuals to share their unfiltered
+        thoughts. Discuss the topics you love, and get paid for doing
+        <em>just</em> that.
+      </p>
+
+      <div class="features">
+        <div class="feature">
+          <img src="./img/checkmark.svg" alt="checkmark" />
+          <p>Receive 99% off the earnings.</p>
+        </div>
+
+        <div class="feature">
+          <img src="./img/checkmark.svg" alt="checkmark" />
+          <p>Get paid via Debit Card, ACH, or PayPal.</p>
+        </div>
+
+        <div class="feature">
+          <img src="./img/checkmark.svg" alt="checkmark" />
+          <p>Withdraw your earnings anytime.</p>
+        </div>
+      </div>
+
+      <form class="form" action="">
+        <input class="email-input" type="text" placeholder="john@example-com" />
+        <button class="btn">Get Started</button>
+      </form>
+    </header>
+
+    <main class="container">
+      <div class="brands">
+        <img src="./img/facebook-logo.png" alt="facebook logo" />
+        <img src="./img/dribbble-logo.png" alt="dribbble logo" />
+        <img src="./img/youtube-logo.png" alt="youtube logo" />
+      </div>
+
+      <section class="escrow-section">
+        <h2>Secure your money with Escrow.</h2>
+
+        <p>
+          Spense uses Escrow to secure all payments. We believe Escrow offers
+          the highest level of security for your payments, so you never need to
+          worry about scams.
+        </p>
+
+        <a class="btn-link" href="#"
+          >Learn more about Escrow <i class="fas fa-long-arrow-alt-right"></i
+        ></a>
+
+        <img src="./img/phone-mockup-mobile.png" alt="" />
+      </section>
+    </main>
+
+    <section class="text-editor-section container">
+      <h2>A text editor like no other.</h2>
+
+      <p>
+        Our text editor pulls you into focus mode with it's simplistic design
+        and usability so you can put out your best writings.
+      </p>
+
+      <a class="btn-link" href="#">Text Editor Live Demo →</a>
+
+      <img src="./img/text-editor.png" alt="" />
+    </section>
+
+    <footer class="footer container">
+      <div>
+        <a href="#" class="logo">spense.</a>
+
+        <p>
+          Spense is an open platform for individuals to share their unfiltered
+          thoughts. Discuss the topics you love, and get paid for doing
+          <em>just</em> that.
+        </p>
+      </div>
+
+      <nav class="footer-navbar">
+        <div class="footer-navbar-menu">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Customers</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-navbar-menu">
+          <h3>Opportunities</h3>
+          <ul>
+            <li><a href="#">Jobs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-navbar-menu">
+          <h3>Sitemap</h3>
+          <ul>
+            <li><a href="#">Homepage</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-navbar-menu">
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+
+    <script src="./js/app.js"></script>
+  </body>
 </html>
