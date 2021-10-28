@@ -21,12 +21,14 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div class="top-notice container">
-      <p>
-        🎉 To celebrate Spense's launch, we will be waiving all feels for the
-        entire month of April.
-        <span>You will be receiving 100% of the earnings.</span> 🎉
-      </p>
+    <div class="top-notice">
+      <div class="container">
+        <p>
+          🎉 To celebrate Spense's launch, we will be waiving all feels for the
+          entire month of April.
+          <span>You will be receiving 100% of the earnings.</span> 🎉
+        </p>
+      </div>
     </div>
 
     <nav class="navbar">
@@ -52,38 +54,56 @@
       </div>
     </nav>
 
-    <header class="header container">
-      <img src="./img/hero-image-mobile.png" alt="Hero image" />
+    <header class="header">
+      <div class="container">
+        <picture class="header-hero">
+          <source
+            media="(min-width:1024px)"
+            srcset="./img/hero-image-desktop.png"
+          />
+          <source
+            media="(min-width:600px)"
+            srcset="./img/hero-image-tablet.png"
+          />
+          <img src="./img/hero-image-mobile.png" alt="Flowers" />
+        </picture>
 
-      <h1>Share your unfiltered thoughts. Get paid.</h1>
+        <div class="header-info">
+          <h1>Share your unfiltered thoughts. Get paid.</h1>
 
-      <p>
-        Spense is an open platform for individuals to share their unfiltered
-        thoughts. Discuss the topics you love, and get paid for doing
-        <em>just</em> that.
-      </p>
+          <p>
+            Spense is an open platform for individuals to share their unfiltered
+            thoughts. Discuss the topics you love, and get paid for doing
+            <em>just</em> that.
+          </p>
 
-      <div class="features">
-        <div class="feature">
-          <img src="./img/checkmark.svg" alt="checkmark" />
-          <p>Receive 99% off the earnings.</p>
-        </div>
+          <div class="features">
+            <div class="feature">
+              <img src="./img/checkmark.svg" alt="checkmark" />
+              <p>Receive 99% off the earnings.</p>
+            </div>
 
-        <div class="feature">
-          <img src="./img/checkmark.svg" alt="checkmark" />
-          <p>Get paid via Debit Card, ACH, or PayPal.</p>
-        </div>
+            <div class="feature">
+              <img src="./img/checkmark.svg" alt="checkmark" />
+              <p>Get paid via Debit Card, ACH, or PayPal.</p>
+            </div>
 
-        <div class="feature">
-          <img src="./img/checkmark.svg" alt="checkmark" />
-          <p>Withdraw your earnings anytime.</p>
+            <div class="feature">
+              <img src="./img/checkmark.svg" alt="checkmark" />
+              <p>Withdraw your earnings anytime.</p>
+            </div>
+          </div>
+
+          <form class="form" action="">
+            <input
+              class="email-input"
+              type="text"
+              placeholder="john@example-com"
+            />
+            <button class="btn">Get Started</button>
+          </form>
         </div>
       </div>
-
-      <form class="form" action="">
-        <input class="email-input" type="text" placeholder="john@example-com" />
-        <button class="btn">Get Started</button>
-      </form>
     </header>
 
     <main class="container">
@@ -91,51 +111,79 @@
         <img src="./img/facebook-logo.png" alt="facebook logo" />
         <img src="./img/dribbble-logo.png" alt="dribbble logo" />
         <img src="./img/youtube-logo.png" alt="youtube logo" />
+        <img
+          class="no-mobile"
+          src="./img/pinterest-logo.png"
+          alt="pinterest logo"
+        />
+        <img
+          class="no-mobile"
+          src="./img/twitter-logo.png"
+          alt="twitter logo"
+        />
+        <img class="no-tablet" src="./img/reddit-logo.png" alt="reddit logo" />
+        <img class="no-tablet" src="./img/google-logo.png" alt="google logo" />
+        <img class="no-tablet" src="./img/slack-logo.png" alt="slack logo" />
       </div>
 
       <section class="escrow-section">
-        <h2>Secure your money with Escrow.</h2>
+        <div class="escrow-info">
+          <h2>Secure your money with Escrow.</h2>
 
-        <p>
-          Spense uses Escrow to secure all payments. We believe Escrow offers
-          the highest level of security for your payments, so you never need to
-          worry about scams.
-        </p>
+          <p>
+            Spense uses Escrow to secure all payments. We believe Escrow offers
+            the highest level of security for your payments, so you never need
+            to worry about scams.
+          </p>
 
-        <a class="btn-link" href="#"
-          >Learn more about Escrow <i class="fas fa-long-arrow-alt-right"></i
-        ></a>
+          <a class="btn-link" href="#"
+            >Learn more about Escrow <i class="fas fa-long-arrow-alt-right"></i
+          ></a>
+        </div>
 
-        <img src="./img/phone-mockup-mobile.png" alt="" />
+        <picture class="escrow-img">
+          <source
+            media="(min-width: 1024px)"
+            srcset="./img/phone-mockup-desktop.png"
+          />
+          <source
+            media="(min-width: 700px)"
+            srcset="./img/phone-mockup-tablet.png"
+          />
+
+          <img src="./img/phone-mockup-mobile.png" alt="" />
+        </picture>
       </section>
     </main>
 
     <section class="text-editor-section container">
-      <h2>A text editor like no other.</h2>
+      <div class="text-editor-section-info">
+        <h2>A text editor like no other.</h2>
 
-      <p>
-        Our text editor pulls you into focus mode with it's simplistic design
-        and usability so you can put out your best writings.
-      </p>
+        <p>
+          Our text editor pulls you into focus mode with it's simplistic design
+          and usability so you can put out your best writings.
+        </p>
 
-      <a class="btn-link" href="#">Text Editor Live Demo →</a>
+        <a class="btn-link" href="#">Text Editor Live Demo →</a>
+      </div>
 
       <img src="./img/text-editor.png" alt="" />
     </section>
 
-    <footer class="footer container">
-      <div>
-        <a href="#" class="logo">spense.</a>
+    <footer class="footer">
+      <nav class="footer-navbar container">
+        <div class="footer-info">
+          <a href="#" class="logo">spense.</a>
 
-        <p>
-          Spense is an open platform for individuals to share their unfiltered
-          thoughts. Discuss the topics you love, and get paid for doing
-          <em>just</em> that.
-        </p>
-      </div>
+          <p>
+            Spense is an open platform for individuals to share their unfiltered
+            thoughts. Discuss the topics you love, and get paid for doing
+            <em>just</em> that.
+          </p>
+        </div>
 
-      <nav class="footer-navbar">
-        <div class="footer-navbar-menu">
+        <div class="footer-navbar-menu company">
           <h3>Company</h3>
           <ul>
             <li><a href="#">About</a></li>
@@ -144,21 +192,21 @@
           </ul>
         </div>
 
-        <div class="footer-navbar-menu">
+        <div class="footer-navbar-menu oportunity">
           <h3>Opportunities</h3>
           <ul>
             <li><a href="#">Jobs</a></li>
           </ul>
         </div>
 
-        <div class="footer-navbar-menu">
+        <div class="footer-navbar-menu sitemap">
           <h3>Sitemap</h3>
           <ul>
             <li><a href="#">Homepage</a></li>
           </ul>
         </div>
 
-        <div class="footer-navbar-menu">
+        <div class="footer-navbar-menu r-4 resources">
           <h3>Resources</h3>
           <ul>
             <li><a href="#">Support</a></li>
